@@ -87,6 +87,7 @@ adb pull /system/bin/ftmipcd ../../../vendor/motorola/$DEVICE/proprietary
 adb pull /system/bin/mdm_panicd ../../../vendor/motorola/$DEVICE/proprietary
 adb pull /system/bin/mediaserver ../../../vendor/motorola/$DEVICE/proprietary
 adb pull /system/bin/modemlog ../../../vendor/motorola/$DEVICE/proprietary
+adb pull /system/bin/mount_ext3.sh ../../../vendor/motorola/$DEVICE/proprietary
 adb pull /system/bin/mot_boot_mode ../../../vendor/motorola/$DEVICE/propietary
 adb pull /system/bin/startup_smc.sh ../../../vendor/motorola/$DEVICE/propietary
 adb pull /system/bin/system_server ../../../vendor/motorola/$DEVICE/proprietary
@@ -259,6 +260,7 @@ PRODUCT_COPY_FILES += \\
     vendor/motorola/__DEVICE__/proprietary/mdm_panicd:/system/bin/mdm_panicd \\
     vendor/motorola/__DEVICE__/proprietary/modemlog:/system/bin/modemlog \\
     vendor/motorola/__DEVICE__/proprietary/mot_boot_mode:/system/bin/mot_boot_mode \\
+    vendor/motorola/__DEVICE__/proprietary/mount_ext3.sh:/system/bin/mount_ext3.sh \\
     vendor/motorola/__DEVICE__/proprietary/pppd-ril:/system/bin/pppd-ril \\
     vendor/motorola/__DEVICE__/proprietary/pvrsrvinit:/system/bin/pvrsrvinit \\
     vendor/motorola/__DEVICE__/proprietary/SaveBPVer:/system/bin/SaveBPVer \\
