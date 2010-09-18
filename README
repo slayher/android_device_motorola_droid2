@@ -11,6 +11,10 @@ code.  I could not have created this without their assistance.
 Use this device at your own risk.  At anytime it may be incomplete or
 broken, and may lead to phone that refuses to boot. I take no responsibilty
 for any damage that may come of attempting to use this.
+
+						NOTE:
+Inorder for the hijack portion to build, repos from places other than AOSP
+maybe required.
 **************************************************************************
 
 
