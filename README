@@ -1,0 +1,16 @@
+******************************* README ***********************************
+This is a device and a vendor setup to allow the building of AOSP Code for
+a Droid2 device.  Use this at your own risk.
+
+Clone, download, or pull this device into your device/motorola/ directory.
+Verify ADB is running and run ./extract-files.sh
+
+I must give credit to Koush and Cvpcs for help, guidelines, and borrowed
+code.  I could not have created this without their assistance.
+
+Use this device at your own risk.  At anytime it may be incomplete or
+broken, and may lead to phone that refuses to boot. I take no responsibilty
+for any damage that may come of attempting to use this.
+**************************************************************************
+
+
