@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),droid2)
+ifeq ($(TARGET_DEVICE),shadow)
 
 include $(CLEAR_VARS)
 
@@ -61,11 +61,13 @@ endif
 
 include $(BUILD_EXECUTABLE)
 
+ifeq ($(BOARD_HIJACK_LOG_ENABLE),true)
 include $(CLEAR_VARS)
 LOCAL_MODULE := hijack.log_dump
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_MODULE_PATH := $(TARGET_OUT_EXECUTABLES)
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
+endif
 
 endif

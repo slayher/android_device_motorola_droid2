@@ -1,5 +1,5 @@
 #!/system/xbin/bash
-# Provided by cvpcs
+
 # we put xbin first, so we get busybox instead of toolbox
 export PATH="/system/bin:/system/xbin:${PATH}"
 
