@@ -123,9 +123,6 @@ PRODUCT_COPY_FILES += \
 	device/motorola/droid2/com.motorola.android.frameworks.jar:system/framework/com.motorola.android.frameworks.jar \
 	device/motorola/droid2/com.motorola.android.widget.jar:system/framework/com.motorola.android.widget.jar
 
-PRODUCT_PACKAGES += \
-    librs_jni
-
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 

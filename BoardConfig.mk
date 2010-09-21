@@ -33,7 +33,7 @@ USE_CAMERA_STUB := true
 TARGET_BOARD_PLATFORM := omap3
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_ARCH_VARIANT := armv7-a
 TARGET_GLOBAL_CFLAGS += -mtune=cortex-a8
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a8
 
@@ -71,15 +71,16 @@ USE_PV_WINDOWS_MEDIA := false
 BOARD_USES_QCOM_HARDWARE := true
 
 BOARD_HAVE_BLUETOOTH := true
-BOARD_HAVE_BLUETOOTH_BCM := true
+#BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_GPS_LIBRARIES := libgps_rds
 BOARD_GL_TEX_POW2_DIMENSION_REQUIRED := true
 BOARD_EGL_CFG := vendor/motorola/droid2/proprietary/egl.cfg
 
-BOARD_BOOTIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x00280000)
-BOARD_RECOVERYIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x00500000)
-BOARD_SYSTEMIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x07500000)
-BOARD_USERDATAIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x04ac0000)
+BOARD_BOOTIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x003FFFFF)
+BOARD_RECOVERYIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x004FFFFF)
+BOARD_SYSTEMIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x0BDFFFFF)
+BOARD_PREINSTALLIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x)
+BOARD_USERDATAIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x)
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_HAS_NO_MISC_PARTITION := true
@@ -91,10 +92,13 @@ BOARD_SYSTEM_DEVICE := /dev/block/mmcblk1p21
 BOARD_SYSTEM_FILESYSTEM := auto
 BOARD_CACHE_DEVICE := /dev/block/cache
 BOARD_CACHE_FILESYSTEM := auto
+BOARD_PREINSTALL_DEVICE := /dev/block/preinstall
+BOARD_PREINSTALL_FILESYSTEM := auto
 
 TARGET_OTA_SCRIPT_MODE := edify
 TARGET_NO_BOOT := true
 TARGET_NO_RECOVERY := true
+TARGET_NO_PREINSTALL := false
 
 # BOARD_HIJACK_EXECUTABLES := logwrapper
 BOARD_HIJACK_BOOT_PATH := /preinstall/boot
@@ -102,7 +106,7 @@ BOARD_HIJACK_BOOT_PATH := /preinstall/boot
 
 # information for hijacking
 BOARD_HIJACK_EXECUTABLES := logwrapper
-#BOARD_HIJACK_LOG_ENABLE := true
+BOARD_HIJACK_LOG_ENABLE := true
 BOARD_HIJACK_UPDATE_BINARY := /preinstall/update-binary
 BOARD_HIJACK_BOOT_UPDATE_ZIP := /preinstall/update-boot.zip
 BOARD_HIJACK_RECOVERY_UPDATE_ZIP := /preinstall/update-recovery.zip
