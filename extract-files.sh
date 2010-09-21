@@ -328,7 +328,7 @@ PRODUCT_COPY_FILES += \\
     vendor/motorola/__DEVICE__/proprietary/smoduled:/system/bin/smoduled \\
     vendor/motorola/__DEVICE__/proprietary/tcmd:/system/bin/tcmd \\
     vendor/motorola/__DEVICE__/proprietary/tcmdhelp:/system/bin/tcmdhelp \\
-    vendor/motorola/__DEVICE__/proprietary/testppd:/system/bin/testpppd \\
+    vendor/motorola/__DEVICE__/proprietary/testppdd:/system/bin/testpppd \\
     vendor/motorola/__DEVICE__/proprietary/tstmetainfo:/system/bin/tstmetainfo \\
     vendor/motorola/__DEVICE__/proprietary/usbd:/system/bin/usbd \\
     vendor/motorola/__DEVICE__/proprietary/backup:/system/xbin/backup \\
@@ -423,8 +423,8 @@ PRODUCT_COPY_FILES += \\
     vendor/motorola/__DEVICE__/proprietary/libomx_evrcdec_sharedlibrary.so:/system/lib/libomx_evrcdec_sharedlibrary.so \\
     vendor/motorola/__DEVICE__/proprietary/libomx_qcelpdec_sharedlibrary.so:/system/lib/libomx_qcelpdec_sharedlibrary.so \\
     vendor/motorola/__DEVICE__/proprietary/libomx_qcelpenc_sharedlibrary.so:/system/lib/libomx_qcelpenc_sharedlibrary.so \\
-    vendor/motorola/__DEVICE__/proprietary/libomx_wmadec_sharedlibrary.:/system/lib/libomx_wmadec_sharedlibrary.so \\
-    vendor/motorola/__DEVICE__/proprietary/libopencore_arcaudiolocal.s:/system/lib/libopencore_arcaudiolocal.so \\
+    vendor/motorola/__DEVICE__/proprietary/libomx_wmadec_sharedlibrary.so:/system/lib/libomx_wmadec_sharedlibrary.so \\
+    vendor/motorola/__DEVICE__/proprietary/libopencore_arcaudiolocal.so:/system/lib/libopencore_arcaudiolocal.so \\
     vendor/motorola/__DEVICE__/proprietary/libopencore_arcaudiolocalreg.so:/system/lib/libopencore_arcaudiolocalreg.so \\
     vendor/motorola/__DEVICE__/proprietary/libopencore_motlocal.so:/system/lib/libopencore_motlocal.so \\
     vendor/motorola/__DEVICE__/proprietary/libopencore_motlocalreg.so:/system/lib/libopencore_motlocalreg.so \\
@@ -450,7 +450,7 @@ PRODUCT_COPY_FILES += \\
     vendor/motorola/__DEVICE__/proprietary/libui3d.so:/system/lib/libui3d.so \\
     vendor/motorola/__DEVICE__/proprietary/libvideoeditorlite.so:/system/lib/libvideoeditorlite.so \\
     vendor/motorola/__DEVICE__/proprietary/libvisualization_jni.so:/system/lib/libvisualization_jni.so \\
-    vendor/motorola/__DEVICE__/proprietary/ibvsuite_sharedlib.so:/system/lib/libvsuite_sharedlib.so \\
+    vendor/motorola/__DEVICE__/proprietary/libvsuite_sharedlib.so:/system/lib/libvsuite_sharedlib.so \\
     vendor/motorola/__DEVICE__/proprietary/libwbxmlparser.so:/system/lib/libwbxmlparser.so \\
     vendor/motorola/__DEVICE__/proprietary/ulogd_BASE.so:/system/lib/ulogd_BASE.so \\
     vendor/motorola/__DEVICE__/proprietary/ulogd_SQLITE3.so:/system/lib/ulogd_SQLITE3.so \\
@@ -462,11 +462,19 @@ PRODUCT_COPY_FILES += \\
     vendor/motorola/__DEVICE__/proprietary/libeglinfo.so:/system/lib/egl/libeglinfo.so \\
     vendor/motorola/__DEVICE__/proprietary/libgles1_texture_stream.so:/system/lib/egl/libgles1_texture_stream.so \\
     vendor/motorola/__DEVICE__/proprietary/libgles2_texture_stream.so:/system/lib/egl/libgles2_texture_stream.so \\
-    vendor/motorola/__DEVICE__/proprietary/erlay.omap3.so:/system/lib/hw/overlay.omap3.so \\
+    vendor/motorola/__DEVICE__/proprietary/overlay.omap3.so:/system/lib/hw/overlay.omap3.so \\
     vendor/motorola/__DEVICE__/proprietary/lights.droid2.so:/system/lib/hw/lights.droid2.so \\
     vendor/motorola/__DEVICE__/proprietary/sensors.droid2.so:/system/lib/hw/sensors.droid2.so \\
     vendor/motorola/__DEVICE__/proprietary/gralloc.default.so:/system/lib/hw/gralloc.default.so \\
-    vendor/motorola/__DEVICE__/proprietary/gralloc.omap3.so:/system/lib/hw/gralloc.omap3.so
+    vendor/motorola/__DEVICE__/proprietary/gralloc.omap3.so:/system/lib/hw/gralloc.omap3.so \\
+    vendor/motorola/__DEVICE__/proprietary/en-US_lh0_sg.bin:/system/tts/lang_pico/en-US_lh0_sg.bin \\
+    vendor/motorola/__DEVICE__/proprietary/en-US_ta.bin:/system/tts/lang_pico/en-US_ta.bin \\
+    vendor/motorola/__DEVICE__/proprietary/es-ES_ta.bin:/system/tts/lang_pico/es-ES_ta.bin \\
+    vendor/motorola/__DEVICE__/proprietary/es-ES_zl0_sg.bin:/system/tts/lang_pico/es-ES_zl0_sg.bin \\
+    vendor/motorola/__DEVICE__/proprietary/cdma_droid2-keypad.kcm.bin:/system/usr/keychars/cdma_droid2-keypad.kcm.bin \\
+    vendor/motorola/__DEVICE__/proprietary/cpcap-key.kl:/system/usr/keylayout/cpcap-key.kl \\
+    vendor/motorola/__DEVICE__/proprietary/cdma_droid2-keypad.kl:/system/usr/keylayout/cdma_droid2-keypad.kl 
+
 
 EOF
 
