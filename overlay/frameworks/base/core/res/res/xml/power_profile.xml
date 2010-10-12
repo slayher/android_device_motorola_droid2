@@ -48,8 +48,8 @@
   <!-- Power consumption at different speeds -->
   <array name="cpu.active">
       <value>280</value>
-      <value>207</value>
-      <value>182</value>
-      <value>66</value>
+      <value>200</value>
+      <value>120</value>
+      <value>40</value>
   </array>
 </device>

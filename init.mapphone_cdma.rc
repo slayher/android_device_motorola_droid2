@@ -606,10 +606,3 @@ on property:tcmd.ctrl_adb=0
 service loadpreinstalls /system/bin/logwrapper /system/bin/loadpreinstalls.sh
     disabled
     oneshot
-
-# originally in init.rc
-service map /system/bin/sdptool add --channel=20 MAP
-    user bluetooth
-    group bluetooth net_bt_admin
-    disabled
-    oneshot

@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),droid2)
+ifeq ($(TARGET_DEVICE),shadow)
 
 include $(CLEAR_VARS)
 
